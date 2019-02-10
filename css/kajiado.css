@@ -10,6 +10,7 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	background: #000;
+	overflow: hidden;
 
 }
 
@@ -75,3 +76,4 @@ section .imgBx img{
 	height: 100%; 
 	object-fit: cover;
 }
+
