@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VUE </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="js/vue.min.js"></script>  
+
+        <style>
+
+        .demo{
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            display: inline-block;
+            margin: 10px;
+        }
+      
+        
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <div class="container pt-5" id='app'  @mousemove="updateCoordinates">
+        <h1>{{title}}</h1>
+        <p>{{sayHello()}}</p>
+        <p><a class="btn btn-sm btn-outline-dark" v-bind:href="link">localhost</a></p>
+
+        
+        <button class="btn btn-sm btn-outline-primary " @click='increase(2, $event)'>Increase</button>
+        
+        <button class="btn btn-sm btn-outline-primary " @click='counter--'>Decrease</button>
+
+        <span class="btn btn-sm btn-outline-danger">{{counter}}</span>
+
+       <p> <br>Coordinates: {{ x }} / {{ y }}
+           <br>
+           <span @:mousemove.stop="" ><br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempora repudiandae est eius illo dolorum vero laudantium tenetur molestiae veritatis. Quod quaerat nam repellat, hic accusantium cum similique officiis beatae dolor facere nesciunt dicta itaque laboriosam possimus quia error neque dolorem quibusdam, ea doloribus numquam ad sequi! Delectus minima quas atque ipsum soluta praesentium voluptas dicta amet id, possimus asperiores!
+
+           </span>
+       </p>
+<br>
+       <input type="text" class="form-control" @keyup.enter="alertMe" v-model="name">
+       <br>
+       <p class="pl-1 text-success">{{name}}</p>
+       <hr>
+
+       <div class="demo" @click="attachRed = !attachRed" :class="{red: attachRed}"></div>
+
+       <div class="demo"  @click="attachGreen = !attachGreen" :class="{green: attachGreen}"></div>
+
+       <div class="demo"  @click="attachBlue = !attachBlue" :class="{blue: attachBlue}"></div>
+
+       <br>
+
+       <div class="progress-bar-animated demo" :style="myStyle">
+        
+        
+       </div>
+       <br>
+       <input type="color" v-model="color">
+       <input type="number" v-model="width">
+       
+
+       <template>
+          template
+       </template>
+
+        
+    </div>
+
+
+    <script>
+        
+        new Vue({
+            el: '#app',
+            data:{
+                title: 'Vue Page',
+                link: 'http://localhost',
+                counter: 0,
+                x: 0,
+                y: 0,
+                name: 'Edit the Text Here',
+                attachRed: false,
+                attachGreen: false,
+                attachBlue: false,
+                color: '',
+                width: '100'
+            },
+
+
+            computed: {
+                myStyle: function(){
+                    return {
+                        backgroundColor: this.color,
+                        width: this.width + 'px'
+                    };
+
+                }
+
+
+            },
+
+            methods: {
+                sayHello: function(){
+                    return 'Hello';
+                },
+
+                increase: function(step , event){
+                    this.counter += step;
+                },
+
+                updateCoordinates: function(event){
+                    this.x = event.clientX;
+                    this.y = event.clientY;
+                },
+
+                alertMe: function(){
+                    alert('You Pressed Enter');
+                }
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+
+
+    </script>
+    </body>
+</html>

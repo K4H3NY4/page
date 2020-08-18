@@ -1,0 +1,377 @@
+<!doctype HTML >
+<html> 
+
+<head>
+<title>LAYOUT</title>
+<script src="js/jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+$('#open-menu').click(function(){
+$('.menu').toggle();
+});
+
+$('#close-menu').click(function(){
+$('.menu').toggle();
+
+});
+
+});
+
+</script>
+
+<style>
+    body{
+        margin: 0px;
+        
+    }
+    /*-----HOME PAGE -----*/
+    .container{
+        background: #00ffff3b;
+        height: 530px;
+        width:100%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url(/img/ngong.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        
+        
+            }
+  
+    /*-----MENU-----*/
+
+    .menu{
+min-width: 40%;
+min-height: 100%;
+background:rgba(60, 61, 59, 1);
+color: white;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 999;
+display:none;
+padding: 30px;
+scroll-behavior: auto;
+    }
+    
+    li{
+        list-style: none;
+        font-size: 2em;
+        padding-top: 5px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        font-family: Leelawadee UI;
+        font-weight:bold;
+        display: ;
+        position: sticky;
+
+
+    }
+li:hover{
+color: white;
+padding-left: 47px;
+font-size: 2.5em;
+text-decoration: underline;
+}
+
+.logo{
+color:white;
+font-family: Leelawadee UI;
+font-size: 25px;
+color:#BBBABA;
+position: sticky;
+
+padding-top:35px;
+display: flex;
+
+}
+.click{
+font-weight:100 ;
+border-color:white;
+padding-left: 5%;
+
+}
+
+.img-logo{
+padding-left: 5%;
+padding-bottom: 60px;
+}
+
+
+
+
+    .content{
+width: 100%
+min-height:100%;
+padding: 0px;
+box-sizing: border-box;
+    }
+    .container-menu{
+    position: absolute;;
+    padding-left: 50px;
+    margin: 0;
+    font-family: Leelawadee UI;
+    
+        
+
+    }
+
+
+    a{
+font-weight:100 ;
+border-color:white;
+text-decoration: none;
+font-family: Leelawadee UI;
+font-size: 25px;
+color: #BBBABA;
+
+    }
+    .h6{
+font-weight:bold ;
+border-color:white;
+text-decoration: none;
+font-family: Leelawadee UI;
+font-size: 25px;
+color: #BBBABA;
+padding: 0px;
+margin:0px;
+
+    }
+
+/*---- About section -----*/
+   .about{
+    background: aqua;
+    display:flex;
+    
+    
+
+   } 
+   .flex-item-1{
+    background: white;
+    padding: 0;
+    flex-grow:1;
+    height: 160px;
+    padding-left:30px;
+
+
+
+   }
+   .flex-item-2{
+       
+       background: #f0efe2;
+       height: 200px;
+       flex-grow: 1;
+       background-image: url(/img/ewaso.jpg);
+       background-size:cover;
+       position: relative;
+       bottom: 40px;
+
+       
+
+       
+
+   }
+    .flex-item-3{
+        background:rosybrown;
+        flex-grow: 1;
+       height: 160px;
+       width: 10%;
+
+    }
+
+    .heading{
+        font-size: 8em;
+        font-family: Leelawadee UI;
+        font-weight: bolder;
+        color: #c9c9c9;
+        padding:200px;
+        margin: 0px;
+
+    }
+
+    .trial{
+        height: 100%;
+        width: 100%;
+        padding: 100px;
+        font-family: Leelawadee UI;
+        font-size: 3em;
+        font-weight: 400;
+        color: #c9c9c9;
+        text-align: left;
+
+    }
+
+
+.h4{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0;
+    margin:0;
+
+
+}  
+.h4-1{
+    font-size: 36px;
+    padding: 0;
+    margin:0;
+
+}
+p{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+
+}
+
+p1{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    text-emphasis: none;
+    line-height: 0pc;
+    
+    
+}
+
+.location{
+    display: flex;
+    background-color: white;
+    justify-content:left;
+
+    
+}
+h1{
+    font-size: 18px;
+    font-family: Leelawadee UI;
+    color: grey;
+    padding-top: 10px;
+    padding-left: 50px;
+
+}
+
+h2{
+    font-size: 12px;
+    font-family: Leelawadee UI;
+    color: grey;
+    padding-left: 50px;
+
+
+}
+
+h3{
+    font: size 18px;
+    font-size: 18px;
+    font-family: Leelawadee UI;
+    color: grey;
+    padding-top: 10px;
+    padding-left: 50px;
+
+}
+h5{
+    font-size:18px;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+
+    </style>
+
+
+
+
+</head>
+
+
+<body>
+<div class="content">
+<div class="container">
+    <div class="trial">
+         <h5>Photography</h5>
+         <span class="h4-1">CLICK<p1><span class="h4">STUDIO</span>
+         <p>Ngong' Hills</p>
+
+         <span id="#h3">I never tell you to get down-it's all <br>about coming up,so you better chuck <br>away, tuffs and hide out</span>
+    </div>
+    
+<div class="container-menu">
+<img class="logo" src="img/menu.png" href="#" id="open-menu" ;>
+
+</div>
+    
+</div>
+
+</div>
+
+<div class="menu">
+<div class="logo">
+<div class="img-logo">
+<img class="" src="img/menu.png" href="#" id="close-menu" ;></div>
+
+
+<a class="click" href="#" id="close-menu">click <a class="h6">STUDIO</a></a>
+
+
+</div>
+
+
+        <ul class="menu-list">
+            <li>Business</li>
+            <li>Entertainment</li>
+            <li>Photography</li>
+            <li>Reading</li>
+            <li>Sports</li>
+            <li>Science</li>
+            
+
+        </ul>
+     </div>  
+
+
+<div class="about">
+    
+    <div class="flex-item-1">
+    <h2> Events</h2>
+    
+        <div class="location">
+            <div class="location-1">
+                <h1>Ngong' Hills</h1>
+                <h2>11 March - 19 March</h2>
+            </div>
+            <div class="location-2">
+                <h1>Ewaso Ng'iro</h1>
+                <h2>05 April - 13 April</h2>
+            </div>
+            <div class="location-3">
+                <h1>Amboseli</h1>
+                <h2>28 April -10 May</h2>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class="flex-item-2">
+        
+    </div>
+<div class="flex-item-3">
+<h2>Next</h2>
+<h1>Click Studio is coming <br>back to ewaso ngiro</h1>
+
+</div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
+

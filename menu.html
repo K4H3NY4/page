@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactless menu</title>
+    <link rel="stylesheet" href="/css/bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+</head>
+
+<style>
+.item{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.price{
+    font-size:1em;
+    font-weight: 600;
+    font-style: italic;
+    color:chocolate;
+}
+
+hr{
+    border-style: dashed;
+    border-width: 1px;
+    
+}
+
+.meal{
+    font-size: 2.5em;
+    font-weight: bold;
+
+}
+
+body{
+    background-image: url(/img/retina_wood.png);
+    background-position: top;
+    
+    background-size: cover;
+}
+
+
+
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+     
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+     
+    
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+</style>
+<body >
+    
+
+     <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide container">
+        <br>
+        <p class="text-center meal">Breakfast</p>
+        <br>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2  ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+
+      </div>
+
+      <div class="swiper-slide container " >
+        <br>
+        <p class="text-center meal">Lunch</p>
+        <br>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2  ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2  ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2  ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+        <ol class="container">
+            <img src="/img/client-1.jpg" alt="" height="60px" width="">
+            <span class="item pr-2 ">Chips Yoghurt</span>
+            <span class="price "> Ksh 750</span>
+            <hr>
+        </ol>
+
+
+
+
+      </div>
+      <div class="swiper-slide bg-info" ></div>
+      <div class="swiper-slide bg-primary" style="background-image:url(./images/nature-4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+     <!-- Swiper JS -->
+  <script src="/js/swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

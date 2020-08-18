@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LOG IN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery.js"></script>
+<script src=""></script>
+<style>
+
+
+.wrapper{
+display: flex;
+background-color:whitesmoke;
+/* height: 720px;
+width: 100%; */
+margin: 0px;
+padding: 0px;
+padding: 10%;
+
+}  
+
+.flex-item-1{
+    background-color: blue;
+    width: 500px;
+    background-image: url(img/dog.png);
+    background-size: cover;
+
+}
+
+.flex-item-2{
+background-color: #191919ed;
+    width: 500px;
+    padding-left:50px;
+    color: Whitesmoke;
+}
+
+input[type=text]{
+    height: 20px;
+    width:80%;
+    background:#282828;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left:0px;
+    border-right:0px;
+    border-bottom-color:white;
+    font-size:18px;
+    color: white;
+padding-left: 15px;
+    
+    
+
+}
+input[type=email]{
+height: 20px;
+width:80%;
+background:#282828;
+border-radius: 0px;
+border-top: 0px;
+border-left:0px;
+border-right:0px;
+border-bottom-color: whitesmoke;
+font-size:18px;
+color: white;
+padding-left: 15px;
+
+}
+
+input[type=password]{
+height: 20px;
+width:80%;
+background:#282828;
+border-radius: 0px;
+border-top: 0px;
+border-left:0px;
+border-right:0px;
+border-bottom-color: whitesmoke;
+font-size:18px;
+color: white;
+padding-left: 15px;
+
+
+}
+
+h2{
+    font-size: 15px;
+    font-family: Leelawadee UI;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+h1{
+font-size: 36px;
+font-family: Leelawadee UI;
+font-weight: 400;
+color: #708652;
+
+}
+
+.button{
+    border-radius: 50px;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #708652;
+    border-color: #708652;
+    color: white;
+    font-weight: 100;
+
+}
+
+.signup{
+    font-size:12px;
+    font-family: Leelawadee UI;
+    text-align: right;
+    background: #282828;
+    border-color: #282828;
+    font-weight: bold;
+    color: grey;
+    position: relative;
+    left: 350px;
+    border: 0px;
+
+
+    
+
+
+}
+
+.signin{
+font-size:12px;
+font-family: Leelawadee UI;
+text-align: right;
+background: #282828;
+border-color: #282828;
+font-weight: bold;
+color: grey;
+position: relative;
+left: 350px;
+border: 0px;
+
+}
+
+.signup-form{
+    display: none;
+}
+
+.signin-form{
+    display: none;
+}
+
+.rem-password{
+    font-size:15px;
+    font-family: Leelawadee UI;
+    color: grey;
+
+}
+
+.links{
+font-size:15px;
+font-family: Leelawadee UI;
+color: grey;
+text-decoration: none;
+padding-left: 28%;
+
+}
+
+.welcome{
+    display: none;
+}
+
+img{
+padding-left: 28%;
+padding-top: 80px;
+}
+
+p{
+    font-size: 15px;
+    font-family: Leelawadee UI;
+}
+.recover{
+    display: ;
+}
+
+</style>
+
+
+
+
+    
+</head>
+<body>
+ <div class="wrapper">
+     <div class="flex-item-1">
+         <video src="video/dog.mp4" autoplay loop muted>
+     </div>
+
+     <div class="flex-item-2">
+         
+         <br>
+         <button class="signup" id="btn1">Sign Up</button> 
+         <button class="signin" id="btn2">Sign In</button>
+
+
+<!------ SIGN UP FORM ------->
+         
+<div class="signup-form">
+         <br><br><br><br>
+        <h1>Sign Up Below</h1>
+        <br><br>
+        <h2>FULL NAME</h2>
+        <input type="text" name="First Name">
+        <br><br>
+        <h2>E-MAIL ADDRESS</h2>
+        <input type="email" name="email">
+        <br><br>
+        <h2>PASSWORD</h2>
+        <input type="password" name="password">
+    
+        <br><br><br>
+<input type="checkbox" name="terms">
+<span class="rem-password">I Have Read And Agree With All Terms Of Service.</span>
+<br><br>
+
+<button class="button" id="btn3">Sign Up</button>
+
+</div>
+<!--- SIGN IN FORM---->
+
+<div class="signin-form">
+<br><br><br><br>
+    <h1>Sign In </h1>
+
+<br><br>
+<h2>E-MAIL ADDRESS</h2>
+<input type="email" name="email">
+<br><br><br>
+<h2>PASSWORD</h2>
+<input type="password" name="password">
+<br><br><br>
+<input type="checkbox" name="rem-password">
+<span class="rem-password">Remember Password</span><a class="links" href="">Forgot Password? </a>
+<br><br><br>
+
+
+<button class="button" id="btn4">Sign In</button>
+
+
+</div>
+
+<!----WELCOME PAGE ---->
+<div class="welcome">
+<img src="img/NJABINI.png">
+
+<h1 style="text-align: center">NJABINI KENNELS<br><br> PEDIGREE K-9</h1>
+     </div>
+
+     <div class="recover">
+         
+<br><br><br><br>
+<h1>Recover Account</h1>
+<p> The password reset link will be sent to your E-mail Address.<br>Check your inbox.</p>
+
+<br><br>
+<h2>E-MAIL ADDRESS</h2>
+<input type="email" name="email">
+<br><br><br>
+<button class="button" id="btn5">Recover</button>
+
+
+     </div>
+
+
+ </div>
+     
+
+
+<script>
+    $(document).ready(function() {
+
+    $( '#btn1' ).click(function () {
+    $('.signup-form').toggle();
+    $('.signin-form').hide();
+    $('.welcome').hide();
+    $('.recover').hide();
+        
+    });
+
+    $( '#btn2' ).click(function () {
+    $('.signin-form').toggle();
+    $('.signup-form').hide();
+    $('.welcome').hide();
+    $('.recover').hide();
+
+    });
+
+    $( '#btn3' ).click(function () {
+    $('.welcome').toggle();
+    $('.signin-form').hide();
+    $('.signup-form').hide();
+    $('.recover').hide();
+
+    });
+
+    $( '#btn4' ).click(function () {
+    $('.welcome').toggle();
+    $('.signin-form').hide();
+    $('.signup-form').hide();
+    $('.recover').hide();
+
+    });
+
+    $( '#btn5' ).click(function () {
+    $('.recover').toggle();
+    $('.welcome').show();
+    $('.signin-form').hide();
+    $('.signup-form').hide();
+
+});
+    
+
+
+    });
+
+
+
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="css/bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery.js"></script>
+
+</head>
+<style>
+
+body{
+    cursor:grab;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    transform: translate(-0px, -0px);
+}  
+
+
+/* end scroll code*/
+
+
+
+.col-6.left{
+    background-color: #111;
+    height: 99vh;
+    padding-left: 60px;
+}
+
+.col-2.right{
+    background-color: #111;
+    height: 99vh;
+    padding-left: 50px;
+}
+
+
+.col-4.center{
+    background-color: #111;
+    height: 99vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-photo{
+    background-image: url(img/footer_bg.jpg);
+    height: 80vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav{
+    color: #333;
+    font-size: 2em;
+    padding-top: 30px;
+    position: fixed;
+   
+}
+.nav:hover{
+    color: white;
+    font-size: 2em;
+    padding-top: 30px;
+    position: fixed;
+ 
+   
+}
+
+.nav1{
+    color: white;
+    font-size: 1em;
+    padding-top: 30px;
+    text-align: center;
+    
+   
+}
+
+.text1{
+    font-size: 3em;
+    font-family:'Arial, Helvetica, sans-serif';
+    text-transform: uppercase;
+    width: 400px;
+    position: absolute;
+    right:100px;
+    padding-top:10vh;
+    color:#999;
+}
+
+
+.circle{
+    width: 600px;
+    height: 600px;
+    border-color: #333;
+    border-style: solid;
+    border-width: 0.5px;
+    opacity: 0.8;
+    position: absolute;
+    border-radius: 100%;
+    right: -5vw;
+    top:-10vh;
+}
+
+
+.text2{
+    font-size: 1.7em;
+    color: #888;
+    position: absolute;
+    bottom: 20vh;
+    width: 700px;
+    font-weight: 300;
+    
+}
+
+.bottom-text{
+position: absolute;
+left: 10%;
+bottom:80px;
+height: 150px;
+width: 250px;
+border-style: solid;
+border-width: 2px;
+border-right:none;
+border-bottom: none;
+border-top:none;
+border-color: #555;
+color: #999;
+display: flex;
+
+}
+
+.bt-1,.bt-2{
+    padding-top:60px;
+    padding-left: 20px;
+    font-size: 1.1em;
+
+}
+
+.welcome{
+    position: absolute;
+   margin-left:25%;
+    bottom: 90px;
+    height: 100px;
+    width: 100px;
+    border-color: #555;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100%;
+}
+
+.welcome:hover{
+    
+    border-color: #888;
+    border-style: dashed;
+    border-width: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+   
+}
+
+.arrow{
+    opacity: 0.1;
+    padding:30%;
+    transform: rotate(270deg);
+}
+
+.arrow:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.text3{
+    font-size: 1em;
+    color:#999;
+    padding-top:10px;
+
+}
+
+.sec2{
+    height: 99vh;
+    width: 80vw;
+    background-color: #111;
+   scroll-behavior: smooth;
+   display: flex;
+   background-position: center;
+    background-attachment: fixed;
+    border-color: #222;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
+    border-top:none;
+    border-bottom:none;
+
+
+}
+
+.sec2 h2:hover{
+    color: #FFF;
+    cursor: pointer;
+}
+
+.service{
+    margin-top: 20vh;
+    margin-right: 60px;
+    width: 800px;
+    height: 500px;
+    background-image: url(img/IMPREZA.png);
+    background-size: contain;
+   /* background-attachment: fixed;*/
+   z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline;
+}
+
+
+.service1{
+    margin-top: 20vh;
+    margin-right: 60px;
+    width: 800px;
+    height: 500px;
+    background-image: url(img/backpack@2x.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+   /* background-attachment: fixed;*/
+   z-index: 99;
+    background-position: center;
+    display: none;
+}
+
+.service2{
+    margin-top: 20vh;
+    margin-right: 60px;
+    width: 800px;
+    height: 500px;
+    background-image: url(img/Web\ 1920\ –\ 3@3x.png);
+    background-size: cover;
+   /* background-attachment: fixed;*/
+   z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+
+
+
+
+.service-text{
+    padding-top: 5vh;
+    width: 500px;
+    color:#999;
+    position: relative;
+    left: 850px ;
+}
+
+.service-text h2{
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-size: 3em;
+
+}
+
+.service-text h5{
+    font-style: italic;
+    color:#555;
+}
+
+.service-text p{
+ 
+    color:#888;
+}
+
+.project{
+    color: white;
+    border-style: solid;
+    padding: 10px;
+    border-width: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project:hover{
+    background-color: white;
+    color: #111;
+    border-color: #111;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.portfolio{
+    font-size:8em;
+    color:#111;
+    font-weight: 900;
+    transform: rotate(270deg);
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 1;
+    left: 1400px;
+    top: 300px;
+    text-shadow:
+		-1px -1px 0 #555,
+		1px -1px 0 #555,
+		-1px 1px 0 #555,
+		1px 1px 0 #555;
+    
+}
+
+.portfolio:hover{
+    text-shadow:
+		-1px -1px 0 #888,
+		1px -1px 0 #888,
+		-1px 1px 0 #888,
+		1px 1px 0 #888;
+
+}
+
+.prev-project{
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 10px;
+    left: 350px;
+}
+
+.prev-project:hover{
+    border-style: dashed;
+    border-color: #888;
+    border-width: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+
+.next-project{
+    transform: rotate(270deg);
+    position: relative;
+    top: 0px;
+    left: 350px;
+}
+
+.next-project:hover{
+    border-style: dashed;
+    border-color: #888;
+    border-width: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.contact{
+    background-color: #111;
+    color: #888;
+}
+
+
+.contact-line{
+    height: 400px;
+    width: 400px;
+    background-color: #111;
+    border-radius: 100%;
+    border-color: #222;
+    bottom: -300px;
+    position:relative;
+
+
+}
+
+.contact-line1{
+    height: 1px;
+    width: 400px;
+    background-color: #111;
+    border-color: #222;
+    transform: rotate(150deg);
+    position: relative;
+    bottom:-300px;
+
+
+}
+
+.contact-line2{
+    height: 1px;
+    width: 400px;
+    background-color: #111;
+    border-color: #222;
+    transform: rotate(30deg);
+    position: relative;
+    bottom:-300px;
+
+
+}
+
+.contact h5:hover{
+    color:white;
+    cursor: pointer;
+}
+
+label{
+    color: #888;
+}
+
+ .form-control{
+    
+    background-color: #111;
+
+}
+
+.form-control:focus{
+    
+    background-color: #111;
+    box-shadow: 3px 2px 20px 0rem #888;
+    color: white;
+
+}
+
+.contact2{
+    display: none;
+}
+.contact2 p{
+    font-size: 24px;
+}
+
+
+
+</style>
+<body class="container-fluid d-flex m-0 p-0 wrapper inner " id="scrollto">
+   <section class="col-6 left animated slideInUp">
+    <div class="nav position-fixed">@kahenyaa</div>
+    <div class="circle animated zoomInUp delay-1s"></div>
+    <div class="text1 "> " great Designs of are not driven by distinctive shape. "
+    </div>
+
+
+    <div class="text2 ">
+        As with any Vonschloo product we wanted a 360 design being attractive from every side and therefore allowing this sound object to be lorem ipsum dolor sit amet consectetur adipisicing placed everywhere in a living environment.
+
+    </div>
+  
+   </section>
+
+
+   <section class="col-4 center  animated ">
+    <div class="top-photo"></div>
+    <div class="bottom-text">
+        <div class="bt-1  font-italic">001</div>
+        <div class="bt-2">The design of the portfolio makes a clear visual statement</div>
+
+    </div>
+
+   </section>
+
+
+   <section class="col-2 right  animated ">
+   
+   <div class="welcome text-center">
+       <img src="img/ic_arrow_downward_white_18dp.png" alt="" class="arrow"> <br>
+  
+   </div>
+
+   </section>
+
+   
+      
+      <span class="circle1"> <span class="portfolio"> PORTFOLIO</span></span>
+      <section class="col-9 sec2 s0">
+        <div class="service animated fadeInUp">
+        <div class="service-text"> 
+            <img src="img/ic_chevron_left_white_18dp.png" alt="" class="prev-project" id="s1">
+            <h2>Hedge Insurance.</h2>
+            <h5>Web Development</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione natus laboriosam vitae cumque accusamus deserunt quis incidunt eaque rem magnam, libero animi, ut, perspiciatis numquam dolores sapiente nobis iure error reprehenderit repudiandae harum. Dolores, magni impedit nihil rem aut ipsum, perferendis voluptatibus libero necessitatibus ad laboriosam possimus beatae rerum.</p>
+            <br>
+            <a href="" class="project">VIEW PROJECT </a>
+            <br><br>
+            <img src="img/ic_chevron_left_white_18dp.png" alt="" class="next-project" id="s2">
+        
+        </div>
+        </div>
+
+
+
+        <div class="service1 animated fadeInUp ">
+            <div class="service-text"> 
+                <img src="img/ic_chevron_left_white_18dp.png" alt="" class="prev-project" id="s3">
+                <h2>KE's Collection.</h2>
+                <h5>Web Development</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione natus laboriosam vitae cumque accusamus deserunt quis incidunt eaque rem magnam, libero animi, ut, perspiciatis numquam dolores sapiente nobis iure error reprehenderit repudiandae harum. Dolores, magni impedit nihil rem aut ipsum, perferendis voluptatibus libero necessitatibus ad laboriosam possimus beatae rerum.</p>
+                <br>
+                <a href="" class="project">VIEW PROJECT </a>
+                <br><br>
+                <img src="img/ic_chevron_left_white_18dp.png" alt="" class="next-project" id="s4">
+            
+            </div>
+            </div>
+
+            <div class="service2 animated fadeInUp ">
+                <div class="service-text"> 
+                    <img src="img/ic_chevron_left_white_18dp.png" alt="" class="prev-project" id="s5">
+                    <h2>Nairobi Fashion Market.</h2>
+                    <h5>Web Development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione natus laboriosam vitae cumque accusamus deserunt quis incidunt eaque rem magnam, libero animi, ut, perspiciatis numquam dolores sapiente nobis iure error reprehenderit repudiandae harum. Dolores, magni impedit nihil rem aut ipsum, perferendis voluptatibus libero necessitatibus ad laboriosam possimus beatae rerum.</p>
+                    <br>
+                    <a href="" class="project">VIEW PROJECT </a>
+                    <br><br>
+                    <img src="img/ic_chevron_left_white_18dp.png" alt="" class="next-project" id="s6">
+                
+                </div>
+                </div>
+
+
+
+
+
+    
+   </section>
+
+
+    
+   <section class="col-3 contact">
+       <div class="p-5">
+        <h3>Contact</h3><br>
+         <h5>Phone: <span class="pl-5">+254700419377</span></h5><br>
+         <h5>E-mail: <span class="pl-5">kahenyaa@gmail.com</span></h5><br>
+         <h5>Twitter:<span class="pl-5"> @kahenyaa</span></h5>
+
+        </div>
+        
+        
+            <div class="form-group pl-5 pr-5 pt-3 contact1">
+                <h4 class="pl-5 pb-3">Or Just fill in the form </h4>
+                <label for="my-input" class="">Name</label>
+                <input id="my-input" class="form-control" type="text" name="">
+<br>
+                <label for="my-input">E-Mail</label>
+                <input id="my-input" class="form-control" type="text" name="">
+<br>
+                <label for="my-input">Phone </label>
+                <input id="my-input" class="form-control" type="text" name="">
+<br>
+                <label for="my-input">Message</label>
+                <textarea id="my-textarea" class="form-control" name="" rows="3"></textarea>
+<br>
+
+                <span class="project"  id="contact">Submit</span>
+
+               
+
+
+        </div>
+        <div class="pl-5 pr-5 pt-3 contact2">
+                <p class="text-center pt-5 animated slideInRight ">
+                    <img src="img/ic_offline_pin_white_18dp.png" alt="">
+                    <br> <br>
+                    Form Successfully Sent. <br> We'll contact you shortly 
+                </p>
+            </div>
+   </section>
+
+<script>
+  $(document).ready(function() {
+
+$( '#s1' ).click(function () {
+$('.service').hide();
+$('.service1').hide();
+$('.service2').show();
+
+});
+
+$( '#s2' ).click(function () {
+$('.service').hide();
+$('.service2').hide();
+$('.service1').show();
+
+
+});
+
+
+
+$( '#s3' ).click(function () {
+$('.service2').hide();
+$('.service1').hide();
+$('.service').show();
+
+
+});
+
+
+
+$( '#s4' ).click(function () {
+$('.service1').hide();
+$('.service').hide();
+$('.service2').show();
+
+
+});
+
+
+$( '#s5' ).click(function () {
+$('.service').hide();
+$('.service2').hide();
+$('.service1').show();
+
+
+});
+
+
+$( '#s6' ).click(function () {
+$('.service1').hide();
+$('.service2').hide();
+$('.service').show();
+
+
+});
+
+$( '#contact' ).click(function () {
+$('.contact1').hide();
+
+$('.contact2').show();
+
+
+});
+
+
+
+
+  });
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
