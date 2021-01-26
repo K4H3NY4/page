@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K'Tsobe Jewels</title>
+    <link rel="stylesheet" href="css/bootstrap-4.2.1.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <script src="js/rellax.js"></script>
+</head>
+<body>
+
+    <style>
+        body{
+           
+        }
+
+       .col-12 {
+   
+    width: 100%;
+    /* padding-right: 15px; */
+     padding-left: 0px; 
+}
+        .pic1{
+            position: absolute;
+            top:0px;
+            right:100px;         
+            height: 900px;
+            background-blend-mode: overlay;
+            z-index: 1;
+
+        }
+
+        .header{
+            height: 100vh;
+            background-color: #111;
+        }
+
+        .header-text{
+            position: absolute;
+            top:35%;
+             left: 20%;
+             font-size: 6em;
+             color: #999;
+             font-weight: 200;
+             margin:0;
+             padding:0;
+             line-height: 0.8;
+        }
+       
+        .shop-now{
+            font-size: 24px;
+padding: 10px 90px 10px 90px;
+position: relative;
+top:-20px;
+border-style: solid;
+background-color: #111;
+color:white;
+        }
+
+.shop-now:hover{
+    background-color: chocolate;
+color:white;
+border-style: none;
+
+}
+
+.navigation{
+    color:white;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    left: -200px;
+    top:50%;
+    text-transform: uppercase;
+    z-index: 999;
+    transform: rotate(90deg);
+}
+.navigation > ul{
+    padding-left:20px;
+}
+
+.navigation1{
+    color:white;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    top:40px;
+    text-transform: uppercase;
+    background-color: #111;
+
+}
+.navigation1 > ul{
+    padding-left:20px;
+}
+.navigation > ul:hover{
+    padding-left:20px;
+    color: chocolate;
+    
+  
+}
+.navigation1 > ul:hover{
+    padding-left:20px;
+    color: chocolate;
+    
+  
+}
+.nav-area{
+    width: 120px;
+    background-color: #111;
+    padding: 0px;
+    margin: 0px;
+    position: sticky;
+    left:0px;
+    
+  
+ 
+}
+
+.overlay-topleft{
+    height: 750px;
+    width: 750px;
+    background-color: #d2691e8a;
+    position: relative;
+    bottom: 750px;
+}
+.bottom-info{
+    position: relative;
+    top:-750px;
+
+}
+.col-4{
+border-style: solid;
+border-color: #999;
+border-width:1px ;
+width: 215px;
+
+}
+
+img.product:hover{
+    background-color: chocolate;
+    background-blend-mode: overlay;
+
+}
+
+.product-name{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 5px;
+}
+
+.cost{
+    font-size:18px;
+   font-weight: 400;
+    padding: 0px;
+    margin: 5px;
+}
+
+.add-to-cart{
+    background-color: #111;
+    color:#fff;
+    padding: 5px 30px 5px 30px;
+    border-style: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.add-to-cart:hover{
+    background-color: chocolate;
+    color:#fff;
+    padding: 5px 30px 5px 30px;
+    border-style: none;
+}
+
+.shop-title{
+    padding-top: 20px;
+    border-top-style: solid;
+    border-width: 1px;
+    font-size:36px;
+    color:#222;
+    border-color: #ddd;
+        
+    
+}
+
+    </style>
+    
+
+<div class="container-fluid header col-12">
+    <div class="navigation1">
+        <ul>MEN</ul>
+        <ul>WOMEN</ul>
+        <ul>ALL</ul>
+       
+    </div>
+    <div class="navigation d-fixed">
+        <ul>Home</ul>
+        <ul>About Us</ul>
+        <ul>Categories</ul>
+        <ul>Trends</ul>
+        <ul>Contact</ul>
+    </div>
+
+    
+    <img src="img/logo.png" alt="" style="position: fixed; z-index: 999;">
+
+
+<div >
+    <img  class="pic1 "src="img/pic3.png" alt="">
+    <div class="header-text">
+    <span
+    style="
+    font-weight:900;
+    color: #fff;
+    
+    ">
+
+FASHION</span> <br>
+<span
+style="
+font-weight:900;
+color: chocolate;
+
+">
+
+MADE</span><br>
+
+<span
+style="
+font-weight:900;
+color: #fff;
+
+">
+
+SIMPLE.</span>
+
+<br>
+
+<button class="shop-now">SHOP NOW</button>
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+<div class="container-fluid d-flex col-12 " style="
+
+">
+<div class="nav-area" ></div>
+<div class="top-left">
+    <img src="img/pic4.jpg" alt="" height="750px">
+    <div class="overlay-topleft">
+        <span
+        style="
+        color: white;
+        position: absolute;
+        font-weight:100;
+        left: 150px;
+        font-size: 7rem;
+        bottom: 50px;
+        font-family: 'Mr De Haviland', cursive;
+        
+        "
+        
+        >Made In</span>
+        <span style="
+            font-size: 12em;
+            font-weight: 700;
+            font-style: italic;
+            position: absolute;
+            bottom: -65px;
+            color: white;
+           left: 0px;
+           
+        
+        ">
+           Rwanda
+        </span>
+
+
+    </div>
+    
+   <div class="bottom-info m-0 p-0">
+    <img src="img/pic5.jpg" alt="" class="p-5 m-2" height="300px">
+    <p class="p-5 m-2"
+    style="
+    position: relative;
+    bottom: 290px;
+    left: 250px;
+    width: 450px;
+    ">
+        <span class="font-weight-bold"> RINGS</span><br>
+        <span>Our rings are hand made using pure metals in our worRWFop in Rwanda Kigali Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt.</span><br><br>
+        <img src="img/ic_chevron_left_white_18dp.png" alt="" style="
+        background-color: #999;">
+         <img src="img/ic_chevron_left_white_18dp.png" alt="" style="
+         background-color: #999; transform: rotate(180deg);" class="ml-2">
+    </p>
+   </div>
+   <div style="
+   font-size: 24px;
+    width: 600px;
+   position: relative;
+   bottom:1000px;
+   color: #111;
+   text-align: justify;
+  left: 0px;
+  margin-left:50px;
+  
+
+">
+  We have a wide collection of jewellery from lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, odio illo fugit tempore quasi eos exercitationem at mollitia ducimus! Sint nesciunt alias odit quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat earum minima commodi laborum.
+</div>
+
+</div>
+
+<div class="top-right ml-5 pl-5 " class="rellax" data-rellax-speed="2">
+<p class="pt-5 mt-1" >
+    <hr style="
+        margin:0px;
+        position: relative;
+        top: 110px;
+        left:15%;
+        padding:0px;
+        border: 0;
+        border-top: 10px solid #222;
+        width:100px;
+        "><span style="
+    font-size: 6em;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    padding-left: 30%;
+ 
+    
+    
+
+    ">
+  
+        jewellery   
+    </span>
+    <br>
+    <div style="
+    width:600px;
+    font-size: 24px;
+    text-align: justify;
+    padding-top:30px;
+    margin-left: 90px;
+    ">
+        Jewellery are apart of our culture and lifestlye. That's why we lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut doloremque similique consequatur nihil commodi vitae, sed distinctio impedit, tempora repudiandae quaerat totam sapiente iusto eveniet quas numquam rem accusamus sint hic quisquam! Hic, pariatur illo.
+
+</div>
+ 
+    
+</p>
+<sectin class="rellax" data-rellax-speed="0">
+<img src="img/pic7.jpg" alt="" class="" height="750px" style="
+position: relative;
+top: 90px;
+z-index: 2;
+
+"  class="rellax" >
+<img src="img/pic8.jpg" alt="" height="250px" style="
+position: relative;
+z-index: 5;
+left: -50px;
+top: -10px;   
+ box-shadow: 0 4px 8px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 0%);
+"  class="rellax" data-rellax-speed="2">
+
+
+</section>
+
+</div>
+<section 
+style="
+font-size:18px;
+color:black;
+position: absolute;
+margin-left:111px;
+top:1500px;
+display: inline-block;
+
+" class=" d-flex  mr-0 p-0">
+
+
+    <section class="d-block  text-center  " style="">
+        <div class="col-12 m-0 p-0">
+        <p class="text-center shop-title 
+        ">OUR TRENDING COLLECTION</p>
+        <br>
+       
+        <table class="table table-bordered text-center m-0 p-0" align="center">
+        <tbody>
+            
+            <tr>
+              <td class=""><img src="img/pic9.jpg" alt="" height="290px" class="product">
+                <p class="product-name">Neck lace</p>
+                <p class="cost">RWF 500</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </td>
+              <td class=""><img src="img/pic10.jpg" alt="" height="290px" class="product">
+                <p class="product-name">Neck lace</p>
+                <p class="cost">RWF 500</p>
+                <button class="add-to-cart">Add To Cart</button>
+    </td>
+              <td class=""><img src="img/pic11.jpg" alt="" height="290px" class="product">
+                <p class="product-name">Neck lace</p>
+                <p class="cost">RWF 500</p>
+                <button class="add-to-cart">Add To Cart</button>
+    </td>
+              <td class=""><img src="img/pic12.jpg" alt="" height="290px" class="product">
+                <p class="product-name">Neck lace</p>
+                <p class="cost">RWF 500</p>
+                <button class="add-to-cart">Add To Cart</button>
+    </td>
+              <td class=""><img src="img/pic13.jpg" alt="" height="290px" class="product">
+                <p class="product-name">Neck lace</p>
+                <p class="cost">RWF 500</p>
+                <button class="add-to-cart">Add To Cart</button>
+    </td>
+            </tr>
+          
+          </tbody>
+        </table>
+    </div>
+</section>
+    
+    
+</section>
+
+
+
+</div>
+
+<script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+  </script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femi One</title>
+    <link rel="stylesheet" href="css/bootstrap-4.2.1.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<script src="js/jquery.js"></script>
+</head>
+
+<style>
+.name{
+    font-size: 7rem;
+                line-height: 100px;
+                font-family: 'Lora', serif;
+}
+
+.line-name{
+    border-top: 5px;
+    border-top-style: solid;
+    border-color: #333;
+ 
+    color: #EBECE9;
+    
+}
+
+.femi{
+    background-image: url(img/femi.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(1);
+}
+
+.femi :hover {
+    filter: blur(1);
+}
+
+.events{
+    background-color: #111;
+}
+
+.location{
+    color:#999;
+    cursor: pointer;
+}
+
+.date{
+    color: #999;
+    font-size: 0.9em;
+}
+
+.details{
+    color: #999;
+    padding-top: 90px;
+    
+    
+}
+
+.up-events{
+    color: #999;
+    font-size: 2em;
+}
+
+.pt-events{
+    color: #999;
+}
+
+.rev-block span{
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 1.4s;
+}
+
+.rev-block:after {
+    content: '';
+    top: 25vh;
+    left: 60px;
+    position: absolute;
+    width: 0%;
+    height: 35%;
+    background: #111;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 1s;
+}
+
+@keyframes rev-block {
+
+    0%{
+        left: 0;
+        width: 0%;
+    }
+
+    50%{
+        left:0;
+        width: 100%;
+    }
+
+    100%{
+        left:0%;
+        width: 0%;
+    }
+    
+}
+
+@keyframes appear-text{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.buy{
+    border-style: solid;
+    padding: 5px;
+    border-width: 1px;
+    margin-left:15px;
+}
+
+.buy:hover{
+    background: #999;
+    color: #111;
+    border-style: solid;
+    padding: 5px;
+    border-width: 1px;
+    margin-left:15px;
+    border-color: #000;
+    cursor: pointer;
+}
+
+
+#koroga-details{
+    display: none;
+}
+
+
+#listing{
+
+}
+
+li{
+    list-style:decimal;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+</style>
+<body class="container-fluid">
+    <div class="row" style="height: 100vh;">
+        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12" style="background-color: #EBECE9;">
+            <div class="row pl-5 pt-4">
+                <div class="col-4"><img src="https://www.flaticon.com/svg/static/icons/svg/50/50422.svg" alt="" width="50px"></div>
+                <div class="col-4 pt-3"> <img src="https://www.flaticon.com/svg/static/icons/svg/263/263062.svg" alt="" width="20px">  LISTINGS</div>
+                <div class="col-4 pt-3"> <img src="https://www.flaticon.com/svg/static/icons/svg/263/263075.svg" alt="" width="20px"> FEATURES</div>
+            </div>
+            <div class="pl-5 rev-block" style="padding-top:30%" ><span class="name">
+                Femi <br> One
+            </span>
+            <span class="line-name">------------ </span>
+            <br>
+            <span class="name">Musician</span>
+        
+        </div>
+
+        <div class=" p-5 bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore, illum aspernatur consequatur hic animi blanditiis vel. Modi aperiam perspiciatis non. Nulla culpa doloremque fuga architecto quisquam voluptatum mollitia officia sint nisi molestias tenetur saepe modi velit enim in iste autem dolores cum unde doloribus iure maiores, itaque quo odit? Velit porro libero dicta voluptate praesentium omnis voluptates cumque neque.</div>
+
+        <div class="pl-5" style="
+        position: relative;
+        bottom: 0px;">
+         READ MORE <img src="https://www.flaticon.com/svg/static/icons/svg/2413/2413368.svg" width="20px" alt=""
+        style="transform: rotate(140deg);">
+        </div>
+        
+        
+        </div>
+
+
+        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 femi" style></div>
+        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 m-0 p-0" style="background-color: #111;">
+            <div class="col-12 h-25" style="background-color: #fff;">
+       
+<div class="pl-5 pt-5">
+    <h6 class="m-0">
+        Top Tracks
+    </h6>
+    <br>
+    <li>FEMI ONE FEAT KAGWE MUNGAI - FORM TODAY</li>
+    <li>Femi One - Moto</li>
+    <li>FEMI ONE ft NVIIRI - KIPETERO KIYESU</li>
+    <li>FEMI ONE X MEJJA - UTAWEZANA</li>
+    <li>FEMI ONE - D-DAY</li>
+</div>
+
+
+            <div style="position: absolute;
+        bottom: 0px;
+        right: 0px;
+            " class="pr-5 pb-5">
+            <span class="small"> <img src="https://www.flaticon.com/svg/static/icons/svg/215/215614.svg" alt="" width="30px" style="transform: rotate(180deg);"> Prev </span> | <span class="small"> Next <img src="https://www.flaticon.com/svg/static/icons/svg/215/215614.svg" alt="" width="30px"> </span>
+          </div>
+            
+            </div>
+            <div class="container-fluid p-5  events h-75">
+                
+                <span class="up-events" style="cursor: pointer;">UPCOMING EVENTS <br><br></span>
+                <div class="row "  id="listing" >
+                <div class="col-4 pb-5">
+                    <span class="location" id="event-1">Koroga Fest, Nairobi</span>
+                    <br>
+                    <span class="date">12th Dec, 2020</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">Bankets & Wine, Nairobi</span>
+                    <br>
+                    <span class="date">24th Dec, 2020</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">X-theme Party, Nakuru</span>
+                    <br>
+                    <span class="date">25th Dec, 2020</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">Chill Brunch, Naivasha</span>
+                    <br>
+                    <span class="date">26th Dec, 2020</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">N.Y. Rave  20/21, Nairobi</span>
+                    <br>
+                    <span class="date">31st Dec, 2020</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">Gengetone Fest, Nairobi</span>
+                    <br>
+                    <span class="date">10th Jan, 2021</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">KICC, Nairobi</span>
+                    <br>
+                    <span class="date">22th Jan, 2021</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">KICC, Nairobi</span>
+                    <br>
+                    <span class="date">30th Jan, 2021</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">KICC, Nairobi</span>
+                    <br>
+                    <span class="date">13th Feb, 2021</span>
+                    <br>
+               
+                </div>
+
+                <div class="col-4 pb-5">
+                    <span class="location">KICC, Nairobi</span>
+                    <br>
+                    <span class="date">31st Dec, 2020</span>
+                    <br>
+               
+                </div>
+
+
+            
+            </div>
+
+
+<div class="row pl-3" id="koroga-details">
+    
+    <div class="col-12" style="color: #999;">
+            <h2>KOROGA FESTIVAL</h2>
+            <br>
+        <span>DATE : 12th Dec, 2020 </span>
+<br>
+    <span>ORGANIZER :  </span>
+    <br>
+    <span> LOCATION : Ngong' Race Course </span>
+     <br>
+    
+    
+    <span>TIME  : 11:00am - 09:00pm </span>
+    <br>
+   
+
+    </div>
+    <div class="col-12" style="color: #999;">
+        <br>
+<h3>EVENT DETAILS </h3> <br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maiores omnis, deleniti hic provident dolorum aliquam alias molestias temporibus nulla doloremque iure assumenda suscipit inventore unde esse exercitationem maxime. Inventore vitae animi accusantium minus repudiandae, harum deleniti voluptatibus recusandae et temporibus doloremque distinctio illum pariatur?
+
+<br><br>
+<span> BUY TICKET
+    
+<span class="buy">REGULAR : 1,000</span>
+
+<span class="buy">VIP : 2,500</span>
+
+<span class="buy">VVIP : 5,000</span>
+
+
+
+</span>
+    </div>
+</div>
+
+            <div class="pt-5">
+                <span class="pt-events" >PAST EVENTS <img src="img/ic_chevron_left_white_18dp.png" width="25px" alt="" style="transform: rotate(180deg);"></span>
+            </div>
+            
+        </div>
+                    
+        </div>
+    </div>
+
+
+    <script>    
+        $(document).ready(function() {
+            
+    $( '#event-1' ).click(function () {
+    $('#koroga-details').show();
+    $('#listing').hide();
+   
+});
+    
+
+$( '.up-events' ).click(function () {
+    $('#listing').show();
+    $('#koroga-details').hide();
+
+
+});
+    
+
+
+    });
+
+
+    
+    
+    
+    </script>
+</body>
+</html>
